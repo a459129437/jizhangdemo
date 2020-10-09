@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="30sp"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/et_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_1"
+        android:layout_marginTop="150dp"
+        android:textSize="16sp"
+        android:textColor="#131212"
+        android:inputType="text"
+        android:autofillHints="username"
+        android:hint="@string/input_username"
+        android:background="#E1DCDC"
+        android:padding="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_1"
+        android:text="@string/hint1"/>
+
+    <Button
+        android:id="@+id/btn_graph_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_2"
+        android:layout_marginTop="40dp"
+        android:text="@string/graph_login"/>
+
+    <Button
+        android:id="@+id/btn_password_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_graph_login"
+        android:text="@string/password_login"
+        android:textColor="#3495E3"
+        android:background="#ffff"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/btn_choose_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_graph_login"
+        android:layout_toEndOf="@id/btn_password_login"
+        android:layout_marginTop="15dp"
+        android:text="@string/register"
+        android:textColor="#3495E3"
+        android:background="#ffff"
+        android:layout_marginStart="180dp"/>
+</RelativeLayout>
